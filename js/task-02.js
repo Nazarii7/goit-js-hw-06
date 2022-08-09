@@ -32,11 +32,12 @@ listSixth.textContent = "Condiments";
 listSixth.classList.add("item");
 
 const titleEl = document.querySelector("ul");
-
-titleEl.insertBefore(listFirst, titleEl.children[0]);
-titleEl.insertBefore(listSecond, titleEl.children[1]);
-titleEl.insertBefore(listThird, titleEl.children[2]);
-titleEl.insertBefore(listFourth, titleEl.children[3]);
-titleEl.insertBefore(listFifth, titleEl.children[4]);
-titleEl.insertBefore(listSixth, titleEl.children[5]);
+titleEl.append(
+  listFirst,
+  listSecond,
+  listThird,
+  listFourth,
+  listFifth,
+  listSixth
+);
 console.log(titleEl);
