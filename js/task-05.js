@@ -1,6 +1,10 @@
-const inPut = document.querySelector("input");
-const outPut = document.querySelector("span");
+const inPut = document.querySelector("#name-input");
+const outPut = document.querySelector("#name-output");
 
 inPut.addEventListener("input", (event) => {
-  outPut.textContent = event.currentTarget.value;
+  if (event.currentTarget.value === "") {
+    outPut.textContent = "Anonymus";
+  } else {
+    outPut.textContent = event.currentTarget.value;
+  }
 });
