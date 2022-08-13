@@ -1,8 +1,6 @@
 const inPut = document.querySelector("input");
-const outPut = document.getElementById("name-output");
+const outPut = document.querySelector("span");
 
-inPut.addEventListener("input", onInputChange);
-
-function onInputChange(event) {
+inPut.addEventListener("input", (event) => {
   outPut.textContent = event.currentTarget.value;
-}
+});
